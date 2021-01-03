@@ -1,0 +1,207 @@
+body{
+    background-color: rgb(226, 225, 225);
+}
+
+.img{
+    width: 30%;
+    margin-left: 260px;
+    margin-top: 50px;
+    border-radius: 90%;
+}
+
+.side{
+    float: right;
+    margin-right: 230px;
+    margin-top: 50px;
+}
+.memory{
+    font-size: 20px;
+    color: rgb(85, 84, 84);
+    padding: 20px;
+}
+.side h1{
+    font-size: 40px;
+}
+.side span{
+    color: rgb(85, 84, 84);
+
+}
+
+.side p{
+    font-size: 20px;
+    
+}
+.side p, span{
+    margin-top: 5px;
+}
+
+/* nav */
+
+.navbar a{
+    text-decoration: none;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.navbar{
+    margin-top: 20px;
+    margin-left: 350px;
+    margin-bottom: 100px;
+    width: 10%;
+}
+.navbar a{
+    animation-name: rainbow;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+ }
+ @keyframes rainbow {
+    0%   {color: red;}
+    25%   {color: orange;}
+    35%  {color: yellow;}
+    50% {color: green;}
+    70%  {color: blue;}
+    85%   {color: indigo;}
+    100%   {color: violet;}
+  }
+
+.obituary{
+    width: 70%;
+    margin-top: 10%;
+    margin: auto;
+    padding: 20px;
+    background: radial-gradient(circle, rgba(247,221,44,50) 0%, rgba(251, 48, 244, 0.37) 94%);
+
+
+    border-radius: 10px;
+   
+}
+.obituary h2{
+    text-align: center;
+}
+.obituary p{
+    padding: 10px;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+/*images section*/
+.gallery img{
+    margin-top: 30px;
+    padding: 5px;
+    width:  430px;
+    height: 400px;
+    object-fit: cover;
+    top: 1px;
+    left: 1px;
+    border-radius: 10px;
+}
+
+
+@media all and (max-width: 1244px){
+    .img{
+        width: 25%;
+    }
+    .side{
+        width: 25%;
+    }
+    .navbar{
+        margin-top: 150px;
+    }
+}
+
+@media all and (max-width: 1100px){
+    .img{
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .side{
+        width: 50%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .obituary {
+        width: 90%;
+    }
+    .navbar{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+}
+@media all and (max-width: 1024px){
+    .navbar a{
+       text-align: center;
+        margin-left: auto;
+        width: 50%; 
+    }
+    .side{
+        width: 50%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+@media all and (max-width: 900px){
+    body{
+        overflow-x: hidden;
+    }
+    .side, .img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img{
+        margin: auto;
+    }
+    .navbar{
+        margin-right: 70%;
+    }
+
+}
+@media all and (max-width: 768px){
+    .side{
+        margin-right: 180px;
+    }
+    .navbar a{
+        margin-left: 250px;
+    }
+    .navbar{
+        border-bottom: none;
+    }
+}
+
+@media all and (max-width: 677px){
+    body{
+        overflow-x: hidden;
+    }
+    .navbar a{
+        margin-left: 200px;
+    } 
+}
+
+@media all and (max-width: 630px){
+    .side{
+        margin-right: 150px;
+    }
+}
+
+@media all and (max-width: 500px){
+    .side{
+        margin-right: 120px;
+        
+    }
+    .navbar a{
+        margin-left: 85px;
+        
+    }
+    .navbar{
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
